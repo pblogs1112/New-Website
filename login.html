@@ -12,15 +12,16 @@
     <div class="auth-container">
       <h2>Welcome Back</h2>
       <p class="auth-subtext">Login to your PreKicks account</p>
-      <form class="auth-form" action="index.html" method="get">
+
+      <form class="auth-form" id="loginForm">
         <div class="input-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="Enter your email" required />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
         </div>
 
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" required />
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
         </div>
 
         <button type="submit" class="btn primary-btn">Login</button>
@@ -29,5 +30,6 @@
     </div>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
