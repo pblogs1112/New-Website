@@ -393,8 +393,7 @@ footer {
   padding: 15px;
   font-size: 0.9em;
 }
-
-/* ===== PRE-ORDER PAGE ===== */
+/* ===== PRE-ORDER GRID ===== */
 .preorder .collection {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -405,6 +404,7 @@ footer {
   margin: 0 auto;
 }
 
+/* ===== PRE-ORDER CARD ===== */
 .preorder .card {
   width: 100%;
   padding: 20px;
@@ -419,6 +419,7 @@ footer {
   transform: translateY(-5px);
 }
 
+/* ===== CARD IMAGE ===== */
 .preorder .card img {
   width: 100%;
   max-width: 230px;
@@ -426,12 +427,14 @@ footer {
   margin-bottom: 15px;
 }
 
+/* ===== CARD TITLE ===== */
 .preorder .card h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #333;
 }
 
+/* ===== CARD DESCRIPTION ===== */
 .preorder .card p {
   color: #555;
   font-size: 0.95em;
@@ -439,11 +442,31 @@ footer {
   margin-bottom: 10px;
 }
 
+/* ===== SELECT DROPDOWN ===== */
 .preorder select {
   padding: 6px 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 15px;
+}
+
+/* ===== PRE-ORDER BUTTON ===== */
+.preorder .card .preorder-btn {
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 10px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.preorder .card .preorder-btn:hover {
+  background-color: #ffae42;
 }
 
 /* ===== CONTACT PAGE ===== */
@@ -691,6 +714,21 @@ footer {
   .hero h1 {
     font-size: 2em;
   }
+
+.preorder .collection {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .preorder .card .preorder-btn {
+    max-width: 180px;
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
+
+  .preorder .card img {
+    max-width: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -776,6 +814,29 @@ footer {
 
   .contact-form {
     margin-top: 10px;
+  }
+
+ .preorder .collection {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .preorder .card .preorder-btn {
+    max-width: 160px;
+    font-size: 0.9em;
+    padding: 8px 18px;
+  }
+
+  .preorder .card img {
+    max-width: 150px;
+  }
+
+  .preorder .card h3 {
+    font-size: 1em;
+  }
+
+  .preorder .card p {
+    font-size: 0.85em;
   }
 }
 
