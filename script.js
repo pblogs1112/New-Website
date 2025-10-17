@@ -62,10 +62,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 // ===== SIMPLE LOGIN FUNCTION =====
 document.getElementById("loginForm")?.addEventListener("submit", e => {
   e.preventDefault();
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
 
-  // simple validation (no storage)
   if (email === "" || password === "") {
     alert("Please enter both email and password!");
   } else {
@@ -77,9 +76,9 @@ document.getElementById("loginForm")?.addEventListener("submit", e => {
 // ===== SIMPLE REGISTER FUNCTION =====
 document.getElementById("registerForm")?.addEventListener("submit", e => {
   e.preventDefault();
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
 
   if (name === "" || email === "" || password === "") {
     alert("Please fill in all fields!");
@@ -88,5 +87,3 @@ document.getElementById("registerForm")?.addEventListener("submit", e => {
     window.location.href = "login.html"; // redirect to login
   }
 });
-
-// ===== END OF SCRIPT =====
